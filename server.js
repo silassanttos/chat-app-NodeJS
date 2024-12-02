@@ -7,6 +7,7 @@ const server = http.createServer(app);
 const io = Socket(server);
 
 // Configuração do Socket.io
+
 io.on('connection', (socket) => {
     console.log('Um usuário se conectou');
     
